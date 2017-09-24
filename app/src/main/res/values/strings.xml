@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">yongjia-CountBook</string>
+    <string name="title_activity_add_counter">add_counter</string>
 </resources>
