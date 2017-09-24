@@ -103,6 +103,7 @@ public class Counter implements Parcelable {
         return date.toString();
     }
     public void setDate(){
+
         this.date = new java.util.Date();
     }
     public int getCurrentValue(){

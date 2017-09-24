@@ -109,6 +109,13 @@ public class MainPage extends AppCompatActivity implements AdapterView.OnItemCli
                 adapter.notifyDataSetChanged();
                 saveInFile();
             }
+            else if (resultCode == RESULT_FIRST_USER){
+                Counter changedCounter;
+                changedCounter = data.getParcelableExtra("CHANGED");
+                countersList.remove(indexRemoved);
+                countersList.add(indexRemoved,changedCounter);
+                saveInFile();
+            }
         }
     }
     @Override
@@ -123,17 +130,6 @@ public class MainPage extends AppCompatActivity implements AdapterView.OnItemCli
         counterviewList.setAdapter(adapter);
     }
 
-//    @Override
-//    protected void onResume(){
-//        super.onResume();
-//        loadFromFile();
-//        adapter = new ArrayAdapter<Counter>(this,
-//                R.layout.list_item, countersList);
-//        counterviewList.setAdapter(adapter);
-//    }
-//    protected void onPause() {
-//        super.onPause();
-//    }
 
 
 
