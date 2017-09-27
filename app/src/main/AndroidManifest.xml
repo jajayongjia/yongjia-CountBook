@@ -16,9 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".add_counter" />
-        <activity android:name=".detail" />
-        <activity android:name=".edit_page"></activity>
+        <activity android:name=".Add_counter" />
+        <activity android:name=".Detail" />
+        <activity android:name=".Edit_page"></activity>
     </application>
 
 </manifest>

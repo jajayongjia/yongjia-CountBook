@@ -91,7 +91,7 @@ public class MainPage extends AppCompatActivity implements AdapterView.OnItemCli
          Counter countersname;
          indexRemoved = position;
          countersname = (Counter)(parent.getItemAtPosition(position)); //get the counter selected
-         Intent i = new Intent(getApplicationContext(), detail.class); //get ready to jump into detail activity.
+         Intent i = new Intent(getApplicationContext(), Detail.class); //get ready to jump into detail activity.
          i.putExtra("COUNTER", countersname);
          startActivityForResult(i,REQUEST_CODE_TWO); // Start the detail activity and wait for the result of delete or change with a specific request code.
             }
@@ -107,7 +107,7 @@ public class MainPage extends AppCompatActivity implements AdapterView.OnItemCli
             @Override
             public void onClick(View view){
 
-                startActivityForResult(new Intent(MainPage.this, add_counter.class),REQUEST_CODE_ONE);//Let new buttion jump to add_counter activity page.
+                startActivityForResult(new Intent(MainPage.this, Add_counter.class),REQUEST_CODE_ONE);//Let new buttion jump to add_counter activity page.
             }
 
         });
@@ -169,6 +169,8 @@ public class MainPage extends AppCompatActivity implements AdapterView.OnItemCli
 
     /**
      * load the date from a file;
+     *  <br>
+     *  save countersList into the file
      */
     private void loadFromFile() {
         try {
@@ -190,6 +192,8 @@ public class MainPage extends AppCompatActivity implements AdapterView.OnItemCli
 
     /**
      * save all the changes into a file
+     * <br>
+     *  load countersList from the file
      */
     private void saveInFile() {
         try {
