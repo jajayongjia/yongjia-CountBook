@@ -13,6 +13,8 @@ package com.ualberta.yongjia_countbook;
 
 import android.os.Parcel;
 import android.os.Parcelable;
+
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
@@ -143,7 +145,10 @@ public class Counter implements Parcelable {
      * @return date - Counter's date;
      */
     public String getDate(){
-        return date.toString();
+        //return date.toString();
+        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
+        String format = formatter.format(date);
+        return format;
     }
 
     /**
@@ -208,7 +213,7 @@ public class Counter implements Parcelable {
      */
     @Override
     public String toString(){
-        return name+" | "+date.toString()+" | Count:"+String.valueOf(currentValue);
+        return name+" | "+this.getDate()+" | Count:"+String.valueOf(currentValue);
     }
 
 }
