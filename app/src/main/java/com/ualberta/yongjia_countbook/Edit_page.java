@@ -34,19 +34,19 @@ import android.widget.Toast;
  * @since 1.0
  */
 public class Edit_page extends AppCompatActivity {
-    EditText editName;
-    EditText editInit;
-    EditText editCurrent;
-    EditText editDate;
-    EditText editComment;
-    Button saveE;
-    Counter editCounter;
-    String name;
-    String comment;
-    int init;
-    int current;
-    String initString;
-    String currentString;
+    private EditText editName;
+    private EditText editInit;
+    private EditText editCurrent;
+    private EditText editDate;
+    private EditText editComment;
+    private Button saveE;
+    private Counter editCounter;
+    private String name;
+    private String comment;
+    private int init;
+    private int current;
+    private String initString;
+    private String currentString;
 
 
     /**

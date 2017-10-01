@@ -33,13 +33,13 @@ import android.widget.Toast;
  */
 public class Add_counter extends AppCompatActivity {
 
-    String name,comment;
-    int init;
-    EditText nameInput;
-    EditText initInput;
-    EditText commentInput;
-    Button createButton;
-    String initString;
+    private String name,comment;
+    private int init;
+    private EditText nameInput;
+    private EditText initInput;
+    private EditText commentInput;
+    private Button createButton;
+    private String initString;
 
     /**Activity onCreate method;
      * @param savedInstanceState create activity

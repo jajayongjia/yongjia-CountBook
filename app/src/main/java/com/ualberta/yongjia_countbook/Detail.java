@@ -33,12 +33,12 @@ import java.util.Date;
  */
 public class Detail extends AppCompatActivity {
     public static final int REQUEST_CODE_THREE = 3;
-    Counter counterName;
-    TextView name;
-    TextView initV;
-    TextView currV;
-    TextView dateV;
-    TextView commV;
+    private Counter counterName;
+    private TextView name;
+    private TextView initV;
+    private TextView currV;
+    private TextView dateV;
+    private TextView commV;
 
 
     /**
